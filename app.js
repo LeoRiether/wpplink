@@ -38,6 +38,14 @@ const onload = () => {
             alert("Seu navegador não suporta cópia para a área de transferência!");
         navigator.clipboard.writeText(result.href);
     });
+
+    document.body.addEventListener('keydown', e => {
+        if (e.ctrlKey && e.key == 'Enter') {
+            e.preventDefault();
+            e.stopPropagation();
+            generateBtn.click();
+        }
+    });
 };
 
 window.addEventListener('load', onload);
