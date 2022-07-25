@@ -1,12 +1,11 @@
 html {
-    background: #c5d3c4;
+    background: #d3d7d2;
     color: #191919;
 }
 
 .title {
     text-align: center;
 }
-
 
 .pure-control-group {
     margin-top: 1em;
@@ -18,10 +17,6 @@ html {
 
 #message {
     height: 15em;
-}
-
-.space-top {
-    margin-top: 1em;
 }
 
 .copy-button {

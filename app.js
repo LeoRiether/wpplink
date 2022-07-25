@@ -9,6 +9,8 @@ const onload = () => {
     let result = document.getElementById('result');
     let resultContainer = document.getElementById('result-container');
     let copy = document.getElementById('copy');
+    let qrDiv = document.getElementById("qrcode");
+    let qr = new QRCode(qrDiv);
 
     number.value = localStorage.getItem('last-number') || '';
     message.value = localStorage.getItem('last-message') || '';
@@ -21,7 +23,11 @@ const onload = () => {
 
         result.href = url;
         result.innerText = url;
+        qr.clear();
+        qr.makeCode(url);
+
         resultContainer.classList.remove('hidden');
+        qrDiv.classList.remove('hidden');
 
         localStorage.setItem('last-number', number.value);
         localStorage.setItem('last-message', message.value);

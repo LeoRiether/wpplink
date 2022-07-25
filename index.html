@@ -30,21 +30,23 @@
                         <label for="message">Mensagem</label>
                         <textarea id="message" placeholder="Mensagem"></textarea>
                     </div>
-                    <div class="pure-control-group space-top">
+                    <div class="pure-control-group">
                         <button type="button" id="generate-btn" type="submit" class="pure-button pure-button-primary">Gerar link</button>
                     </div>
-                    <div id="result-container" class="pure-control-group space-top hidden">
+                    <div id="result-container" class="pure-control-group hidden">
                         <button type="button" class="pure-button copy-button" id="copy">Copiar</button>
                         <span>
                             <a id="result"></a>
                         </span>
                     </div>
+                    <div id="qrcode" class="pure-control-group hidden"></div>
                 </fieldset>
             </form>
         </div>
         <div class="pure-u-2-24 pure-u-lg-7-24"></div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" integrity="sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     
 </body>
