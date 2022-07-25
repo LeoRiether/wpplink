@@ -30,7 +30,7 @@ const onload = () => {
     copy.addEventListener('click', e => {
         if (!navigator.clipboard)
             alert("Seu navegador não suporta cópia para a área de transferência!");
-        navigator.clipboard.write(result.href);
+        navigator.clipboard.writeText(result.href);
     });
 };
 
