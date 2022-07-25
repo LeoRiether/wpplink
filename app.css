@@ -1,0 +1,24 @@
+html {
+    background: #c5d3c4;
+    color: #191919;
+}
+
+.title {
+    text-align: center;
+}
+
+#message, #number {
+    width: 70%;
+}
+
+#message {
+    height: 15em;
+}
+
+.space-top {
+    margin-top: 1em;
+}
+
+.copy-button {
+    margin-right: 1em;
+}
