@@ -7,8 +7,13 @@ html {
     text-align: center;
 }
 
+
+.pure-control-group {
+    margin-top: 1em;
+}
+
 #message, #number {
-    width: 70%;
+    width: 100%;
 }
 
 #message {
